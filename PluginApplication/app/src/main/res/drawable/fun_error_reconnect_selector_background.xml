@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/fun_shape_all_corner_gray_background_1" android:state_pressed="true"/>
+    <item android:drawable="@drawable/fun_shape_all_corner_gray_background_1" android:state_focused="true"/>
+    <item android:drawable="@drawable/fun_shape_all_corner_1"/>
+</selector>

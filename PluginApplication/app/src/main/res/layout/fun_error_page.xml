@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 错误提示页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fun_error_page_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fun_color_f2f2f2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fun_error_page_head_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fun_head_title_height_size"
+        android:background="@drawable/fun_top_bg" >
+
+        <TextView
+            android:id="@+id/fun_error_page_hint_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/fun_error_page_head_title"
+            android:textColor="@color/fun_color_FFFFFF"
+            android:textSize="@dimen/fun_text_size_22_dp" />
+
+        <ImageButton
+            android:id="@+id/fun_error_page_back_game_btn"
+            android:layout_width="@dimen/fun_head_back_game_btn_size"
+            android:layout_height="@dimen/fun_head_back_game_btn_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fun_head_margin_size"
+            android:background="@drawable/fun_back_game_btn"
+            android:gravity="center"
+            android:src="@drawable/fun_down" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fun_transparent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@drawable/fun_error_page_bg"
+                android:src="@drawable/fun_error_page" />
+
+            <Button
+                android:id="@+id/fun_error_page_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fun_text_size_50_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginTop="@dimen/fun_text_size_20_dp"
+                android:background="@drawable/fun_error_reconnect_selector_background"
+                android:gravity="center"
+                android:text="@string/fun_error_page_refresh_btn_title"
+                android:textColor="@color/fun_color_999999"
+                android:textSize="@dimen/fun_text_size_18_dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

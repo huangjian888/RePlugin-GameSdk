@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  
+    <string name="action_settings">Settings</string>
+    <string name="fun_login_head_title">登录</string>
+    <string name="fun_regist_head_title">注册</string>
+    <string name="fun_login_btn_title">立即登录</string>
+    <string name="fun_regist_btn_title">立即注册</string>
+    <string name="fun_login_error_pwd">账号或密码错误</string>
+    <string name="fun_regist_terms_title">点击立即注册,表明你同意好玩123的服务条款。</string>
+    
+    <string name="fun_username_hint_title">请输入账号</string>
+    <string name="fun_pwd_hint_title">请输入密码</string>
+    <string name="fun_repwd_hint_title">请输入确认密码</string>
+    
+    <string name="fun_login_txt_guest_title">快速体验</string>
+    <string name="fun_login_txt_regist_title">注册账号</string>
+    <string name="fun_login_txt_forget_title">忘记密码?</string>
+    <string name="fun_login_txt_error_account_isempty">账号不能为空</string>
+    <string name="fun_login_txt_error_pwd_isempty">密码不能为空</string>
+    <string name="fun_login_txt_error_repwd_isempty">确认密码不能为空</string>
+    <string name="fun_login_txt_error_fail">登录失败</string>
+    <string name="fun_login_txt_error_account_illegal">非法账号</string>
+    <string name="fun_login_txt_error_account_format_error">账号格式错误</string>
+    <string name="fun_login_txt_error_pwd_unsame">两次输入密码不一致</string>
+    <string name="fun_login_txt_error_account_exsit">用户名已存在</string>
+    <string name="fun_login_txt_error_token_expired">token已过期,请重新登录</string>
+    <string name="fun_login_txt_error_regist_fail">注册失败</string>
+    
+    <string name="fun_login_txt_hint_account_input_rule">请输入5-20位数字|字母|下划线</string>
+    <string name="fun_login_txt_hint_pwd_input_rule">请输入字数为6-20位</string>
+    
+    
+    <string name="fun_error_page_head_title">温馨提示</string>
+    <string name="fun_error_page_refresh_btn_title">重试</string>
+    <string name="fun_error_page_error_hint_txt_title">出错啦!!!请稍后重试,祝你玩得愉快!!!</string>
+    <string name="fun_error_page_dialog_btn_sure_title">确定</string>
+    <string name="fun_error_page_dialog_btn_cancel_title">取消</string>
+    <string name="fun_error_page_dialog_msg_title">确定要隐藏浮动工具条?</string>
+    
+    <string name="fun_login_guest_username_title">账号：</string>
+    <string name="fun_login_guest_pwd_title">密码：</string>
+    <string name="fun_login_guest_head_hit_title">亲,请牢记你的账号!</string>
+    <string name="fun_login_guest_save_photo_hit_title">提示:账号密码信息已保存到相册中.</string>
+
+    <string name="fun_rationale4ReqPer">需要请求外部存储权限</string>
+    <string name="fun_rationale4NeverAskAgain">必须需要请求外部存储权限</string>
+
+</resources>

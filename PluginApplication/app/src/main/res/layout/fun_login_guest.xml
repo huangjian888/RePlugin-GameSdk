@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fun="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fun_boxbg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:gravity="center"
+        android:textColor="@color/fun_color_666666"
+        android:textSize="18sp"
+        android:text="@string/fun_login_guest_head_hit_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fun_color_f9f9f9"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:textSize="@dimen/fun_text_size_14_sp"
+            android:textColor="@color/fun_color_666666"
+            android:text="@string/fun_login_guest_username_title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fun_login_guest_username"
+            android:textSize="@dimen/fun_text_size_14_sp"
+            android:textColor="@color/fun_color_f22627"
+            android:layout_weight="2"
+            android:text="XXXXXXXXXXXX" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="@color/fun_color_f9f9f9"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fun_text_size_14_sp"
+            android:textColor="@color/fun_color_666666"
+            android:layout_weight="7"
+            android:text="@string/fun_login_guest_pwd_title" />
+
+        <TextView
+            android:id="@+id/fun_login_guest_pwd"
+            android:layout_width="match_parent"
+            android:textColor="@color/fun_color_f22627"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fun_text_size_14_sp"
+            android:layout_weight="2"
+            android:text="XXXXXXXXXXXX" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fun_text_size_12_sp"
+        android:layout_marginRight="20dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/fun_login_guest_save_photo_hit_title" />
+
+
+    <com.haowan123.funcell.sdk.ui.NumberProgressBar
+        android:id="@+id/fun_login_guest_npb"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fun:max="100"
+        fun:progress="0"
+        fun:progress_reached_bar_height="1.5dp"
+        fun:progress_reached_color="#3498DB"
+        fun:progress_text_color="#3498DB"
+        fun:progress_text_offset="1dp"
+        fun:progress_text_size="10sp"
+        fun:progress_text_visibility="visible"
+        fun:progress_unreached_bar_height="0.75dp"
+        fun:progress_unreached_color="#CCCCCC" />
+
+</LinearLayout>

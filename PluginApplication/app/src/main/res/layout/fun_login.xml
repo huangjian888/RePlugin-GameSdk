@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 登录页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fun_login_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fun_color_FFFFFF"
+    android:focusable="true" 
+	android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fun_login_head_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fun_head_title_height_size"
+        android:background="@drawable/fun_top_bg" >
+
+        <TextView
+            android:id="@+id/fun_login_error_hint_msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/fun_login_head_title"
+            android:textColor="@color/fun_color_FFFFFF"
+            android:textSize="@dimen/fun_text_size_18_dp" />
+
+        <ImageButton
+            android:id="@+id/fun_login_back_game_btn"
+            android:layout_width="@dimen/fun_head_back_game_btn_size"
+            android:layout_height="@dimen/fun_head_back_game_btn_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fun_head_margin_size"
+            android:background="@color/fun_transparent"
+            android:gravity="center"
+            android:src="@drawable/fun_down" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fun_login_head_relativelayout"
+        android:background="@color/fun_color_FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fun_color_FFFFFF"
+            android:orientation="vertical" >
+
+            <!-- 账号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginTop="@dimen/fun_text_size_8_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginBottom="@dimen/fun_text_size_2_dp"
+                
+                android:background="@color/fun_color_eaedf1" >
+
+                <ImageView
+                    android:layout_width="@dimen/fun_text_size_45_dp"
+                    android:layout_height="@dimen/fun_text_size_45_dp"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_accountr" />
+
+                <View
+                    android:layout_width="@dimen/fun_text_size_2_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/fun_color_FFFFFF" />
+
+                <LinearLayout
+                    android:id="@+id/fun_login_account_linearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/fun_login_account_et"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/fun_transparent"
+                        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ_"
+                        android:gravity="center_vertical"
+                        android:hint="@string/fun_username_hint_title"
+                        android:paddingLeft="@dimen/fun_text_size_10_dp"
+                        android:singleLine="true"
+                        android:textColor="@color/fun_color_999999"
+                        android:textSize="@dimen/fun_text_size_16_dp" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="6"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/fun_login_drop_button" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- 密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:background="@color/fun_color_eaedf1" >
+
+                <ImageView
+                    android:layout_width="@dimen/fun_text_size_45_dp"
+                    android:layout_height="@dimen/fun_text_size_45_dp"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_password" />
+
+                <View
+                    android:layout_width="@dimen/fun_text_size_2_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/fun_color_FFFFFF" />
+
+                <EditText
+                    android:id="@+id/fun_login_pwd_et"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fun_pwd_hint_title"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/fun_text_size_10_dp"
+                    android:singleLine="true"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fun_login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginTop="@dimen/fun_text_size_8_dp"
+                android:background="@drawable/fun_login_btn"
+                android:gravity="center"
+                android:text="@string/fun_login_btn_title"
+                android:textColor="@color/fun_color_FFFFFF"
+                android:textSize="@dimen/fun_text_size_18_dp" />
+            
+             <View
+                 android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginTop="@dimen/fun_text_size_10_dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/fun_color_f6f6f6" />
+            
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/fun_text_size_22_dp"
+                android:layout_margin="@dimen/fun_text_size_10_dp">
+
+               
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/fun_login_find_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/fun_login_txt_forget_title"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:id="@+id/fun_login_quick_into_game"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/fun_login_txt_guest_title"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+                <TextView
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:id="@+id/fun_login_regist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/fun_login_txt_regist_title"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+            </LinearLayout>
+
+            <!-- <ListView
+                android:id="@+id/fun_login_about_action_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fun_text_size_10_dp"
+                android:background="@drawable/fun_shape_all_corner"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/fun_color_eaedf1"
+                android:dividerHeight="@dimen/fun_text_size_1_dp"
+                android:listSelector="@drawable/fun_list_item_selector_background"
+                android:scrollbars="none" >
+            </ListView> -->
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

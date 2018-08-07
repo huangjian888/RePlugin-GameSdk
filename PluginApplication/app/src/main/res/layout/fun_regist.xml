@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 注册页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fun_regist_relativelayout"
+    android:background="@color/fun_color_FFFFFF"
+    android:focusable="true" 
+	android:focusableInTouchMode="true" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/fun_regist_head_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fun_head_title_height_size"
+        android:background="@drawable/fun_top_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/fun_regist_head_title"
+            android:textColor="@color/fun_color_FFFFFF"
+            android:textSize="@dimen/fun_text_size_18_dp" />
+
+        <ImageButton
+            android:id="@+id/fun_regist_back_login_btn"
+            android:layout_width="@dimen/fun_head_back_game_btn_size"
+            android:layout_height="@dimen/fun_head_back_game_btn_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/fun_head_margin_size"
+            android:background="@color/fun_transparent"
+            android:gravity="center"
+            android:src="@drawable/fun_down3" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/fun_regist_head_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fun_color_FFFFFF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fun_color_FFFFFF"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/fun_regist_error_hint_rt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:background="@color/fun_color_fee8a7" >
+
+                <ImageView
+                    android:id="@+id/fun_login_hint_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/fun_head_margin_size"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_caveat" />
+
+                <TextView
+                    android:id="@+id/fun_regist_error_hint_msg_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/fun_head_margin_size"
+                    android:layout_toRightOf="@id/fun_login_hint_icon"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/fun_msg_hint_color"
+                    android:textSize="@dimen/fun_text_size_18_dp" />
+
+                <ImageButton
+                    android:id="@+id/fun_regist_error_hint_close_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fun_head_margin_size"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_down2" />
+            </RelativeLayout>
+            <!-- 账号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginTop="@dimen/fun_text_size_8_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginBottom="@dimen/fun_text_size_2_dp"
+                android:background="@color/fun_color_eaedf1" >
+
+                <ImageView
+                    android:id="@+id/fun_regist_account_hint_icon"
+                    android:layout_width="@dimen/fun_text_size_45_dp"
+                    android:layout_height="@dimen/fun_text_size_45_dp"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_accountr" />
+
+                <View
+                    android:layout_width="@dimen/fun_text_size_2_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/fun_color_FFFFFF" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:id="@+id/fun_regist_account_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center_vertical"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHJKLMNOPQRSTUVWXYZ_"
+                    android:hint="@string/fun_username_hint_title"
+                    android:paddingLeft="@dimen/fun_text_size_10_dp"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+            </LinearLayout>
+            <!-- 密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:background="@color/fun_color_eaedf1" >
+
+                <ImageView
+                    android:id="@+id/fun_regist_pwd_hint_icon"
+                    android:layout_width="@dimen/fun_text_size_45_dp"
+                    android:layout_height="@dimen/fun_text_size_45_dp"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_password" />
+
+                <View
+                    android:layout_width="@dimen/fun_text_size_2_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/fun_color_FFFFFF" />
+
+                <EditText
+                    android:id="@+id/fun_regist_pwd_tv"
+                    android:singleLine="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center_vertical"
+                    android:inputType="textPassword"
+                    android:hint="@string/fun_pwd_hint_title"
+                    android:paddingLeft="@dimen/fun_text_size_10_dp"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+            </LinearLayout>
+            <!-- 确认密码 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginTop="@dimen/fun_text_size_2_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:background="@color/fun_color_eaedf1" >
+
+                <ImageView
+                    android:id="@+id/fun_regist_repwd_hint_icon"
+                    android:layout_width="@dimen/fun_text_size_45_dp"
+                    android:layout_height="@dimen/fun_text_size_45_dp"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center"
+                    android:src="@drawable/fun_password" />
+
+                <View
+                    android:layout_width="@dimen/fun_text_size_2_dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/fun_color_FFFFFF" />
+
+                <EditText
+                    android:id="@+id/fun_regist_re_pwd_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:background="@color/fun_transparent"
+                    android:gravity="center_vertical"
+                    android:hint="@string/fun_repwd_hint_title"
+                    android:paddingLeft="@dimen/fun_text_size_10_dp"
+                    android:textColor="@color/fun_color_999999"
+                    android:textSize="@dimen/fun_text_size_16_dp" />
+            </LinearLayout>
+            <!-- 立即注册按钮 -->
+
+            <Button
+                android:id="@+id/fun_regist_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/fun_text_size_45_dp"
+                android:layout_marginTop="@dimen/fun_text_size_8_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:background="@drawable/fun_login_btn"
+                android:gravity="center"
+                android:text="@string/fun_regist_btn_title"
+                android:textColor="@color/fun_color_FFFFFF"
+                android:textSize="@dimen/fun_text_size_18_dp" />
+            <!-- 注册条款 -->
+
+            <TextView
+                android:id="@+id/fun_regist_terms_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fun_text_size_8_dp"
+                android:layout_marginRight="@dimen/fun_text_size_10_dp"
+                android:layout_marginLeft="@dimen/fun_text_size_10_dp"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/fun_regist_terms_title"
+                android:textColor="@color/fun_color_999999"
+                android:textSize="@dimen/fun_text_size_12_sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

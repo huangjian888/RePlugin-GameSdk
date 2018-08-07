@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fun_text_size_50_dp"
+    android:paddingLeft="@dimen/fun_text_size_10_dp"
+    android:paddingRight="@dimen/fun_text_size_10_dp" >
+
+    <TextView
+        android:id="@+id/fun_login_about_action_list_item_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/fun_transparent"
+        android:textColor="@color/fun_color_999999"
+        android:textSize="@dimen/fun_text_size_16_dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/fun_right" />
+
+</RelativeLayout>
